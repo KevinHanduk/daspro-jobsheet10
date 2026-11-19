@@ -16,23 +16,10 @@ public class Bioskop04 {
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
         
-        System.out.println("\nPenonton pada baris ke-3:");
-
-        for (int i = 0; i < penonton[2].length; i++) {
-            System.out.println(penonton[2][i]);
-        }
-        
-        System.out.println("\nPenonton baris ke-3 menggunakan foreach:");
-
-        for (String nama : penonton[2]) {
-            System.out.println(nama);
-        }
-
-        System.out.println("\nDaftar penonton setiap baris:");
-
-        for (int i = 0; i < penonton.length; i++) {
-            System.out.println("Baris ke-" + (i + 1) + ": "
-                    + String.join(", ", penonton[i]));
-        }        
+        System.out.println(penonton.length);
+        System.out.println(penonton[0].length);
+        System.out.println(penonton[1].length);
+        System.out.println(penonton[2].length);
+        System.out.println(penonton[3].length);
         }
     }
