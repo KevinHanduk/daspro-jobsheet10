@@ -28,5 +28,11 @@ public class Bioskop04 {
             System.out.println(nama);
         }
 
+        System.out.println("\nDaftar penonton setiap baris:");
+
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Baris ke-" + (i + 1) + ": "
+                    + String.join(", ", penonton[i]));
+        }        
         }
     }
