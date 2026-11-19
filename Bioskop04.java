@@ -22,5 +22,11 @@ public class Bioskop04 {
             System.out.println(penonton[2][i]);
         }
         
+        System.out.println("\nPenonton baris ke-3 menggunakan foreach:");
+
+        for (String nama : penonton[2]) {
+            System.out.println(nama);
+        }
+
         }
     }
