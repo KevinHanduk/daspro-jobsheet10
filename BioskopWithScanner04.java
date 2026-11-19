@@ -33,14 +33,17 @@ public class BioskopWithScanner04 {
                         System.out.print("Masukkan kolom: ");
                         kolom = sc.nextInt();
 
-                        if (baris < 1 || baris > penonton.length || kolom < 1 || (baris >= 1 && baris <= penonton.length && kolom > penonton[baris - 1].length)) {
+                    if (baris < 1 || baris > penonton.length
+                        || kolom < 1
+                        || kolom > penonton[baris - 1].length) {
                             System.out.println("Nomor kursi tidak tersedia!");
-                        } 
+}
                         else if (penonton[baris - 1][kolom - 1] != null) {
                             System.out.println("Kursi sudah terisi! Pilih kursi lain.");
                         } 
                         else {
                             penonton[baris - 1][kolom - 1] = nama;
+                            System.out.println("kursi kosong, berhasil diisi.");
                             break;
                         }
 
@@ -57,7 +60,7 @@ public class BioskopWithScanner04 {
                         for (int j = 0; j < penonton[i].length; j++) {
 
                             if (penonton[i][j] == null) {
-                                System.out.print("Kosong\t");
+                                System.out.print("***\t");
                             }
                             else {
                                 System.out.print(penonton[i][j] + "\t");
